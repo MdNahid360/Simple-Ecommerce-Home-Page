@@ -43,8 +43,8 @@ let count = 0;
 function addToCart(data) {
   count += 1;
    const dCound = document.querySelector("#countProduct");
-  dCound.innerHTML = count
-  console.log(data);
+  dCound.innerHTML =`(${ count })`
+  
 }
 
  
