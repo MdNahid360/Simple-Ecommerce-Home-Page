@@ -1599,8 +1599,8 @@ letter-spacing: -0.18px;
 .go-up{
     position: fixed;
     z-index: 600;
-    bottom: 60px;
-    right: 60px;
+    bottom: 20px;
+    right: 20px;
     background-color: #004C3F;
     width: 46px;
     height: 46px;
