@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/style/responsive.css">
+    <!-- !slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>PURELY</title>
+</head>
+
+<body>
+    <div class="relative">
+        <nav>
+            <!-- ?top nav -->
+            <div id="topNav" class="primary-bg-color items-center top-nav">
+                <div class="container between">
+                    <div class="items-center hidden-box">
+                        <img class="notification" src="./src/assets/icon/001-bell.png" alt="">
+                        <p>15% discount on shopping over $300</p>
+                    </div>
+                    <div class="between md-w-full ">
+                        <ul class="items-center dropdow-group">
+                            <li class="list-unstyle option-list">
+                                <select class="selector">
+                                    <option class="opt" selected value="english">English</option>
+                                    <option class="opt" value="english">Bangla</option>
+                                </select>
+                            </li>
+                            <li class="list-unstyle option-list">
+                                <select class="selector">
+                                    <option class="opt" selected value="currency">Currency</option>
+                                    <option class="opt" value="usd">USD</option>
+                                    <option class="opt" value="taka">TAKA</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <div class="list-unstyle user all-center">
+                            <img src="./src/assets/icon/user.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ? main navbar -->
+            <div id="nav" class="main-nav">
+                <div class="container">
+                    <div class="nav-row">
+                        <!-- ! nav links -->
+                        <div class="nav-col nav-col-1 ">
+                            <ul class="nav-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Shop</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link " href="">Page <img src="./src/assets/icon/Down_Arrow_3_.png"
+                                            alt="">
+
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-container">
+                                            <ul>
+                                                <li class="side-bar-item">
+                                                    <a class="nav-link" href="">Page 1</a>
+                                                </li>
+                                                <li class="side-bar-item">
+                                                    <a class="nav-link" href="">Page 2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- ! nav logo -->
+                        <div class="nav-col all-center nav-col-2 logo-section">
+                            <img src="./src/assets/img/logo (1).png" alt="" class="logo">
+                        </div>
+                        <!-- ! nav end links -->
+                        <div class="nav-col nav-col-3 items-center justify-end">
+                            <div class="search-box">
+                                <input type="text" placeholder="Find your products" class="search-input">
+                                <img src="./src/assets/icon/search.png" alt="" class="search-icon">
+                            </div>
+                            <div class="cart-section ">
+                                <img src="./src/assets/icon/cart.png" alt="">
+                                Cart
+                                <span id="countProduct">(3)</span>
+                            </div>
+                            <button id="open" class="toggle-btn"><img class="toggle-icon"
+                                    src="./src/assets/icon/hamburger.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- ? side bar -->
+        <div id="sideBar" class="side-bar">
+            <div class="side-box ">
+                <div class="between mt-10">
+                    <h2 class="sidebar-title">Menu</h2>
+                    <button id="close" class="close-btn">x</button>
+                </div>
+                <ul class="sibar-menu">
+                    <li class="side-bar-item">
+                        <a class="nav-link" href="">Home</a>
+                    </li>
+                    <li class="side-bar-item">
+                        <a class="nav-link" href="">About</a>
+                    </li>
+                    <li class="side-bar-item">
+                        <a class="nav-link" href="">Shop</a>
+                    </li>
+                    <li class="side-bar-item dropdown">
+                        <span class="nav-link ">Page <img src="./src/assets/icon/Down_Arrow_3_.png" alt="">
+
+                        </span>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-container">
+                                <ul>
+                                    <li class="side-bar-item">
+                                        <a class="nav-link" href="">Page 1</a>
+                                    </li>
+                                    <li class="side-bar-item">
+                                        <a class="nav-link" href="">Page 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="side-bar-item">
+                        <a class="nav-link" href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- ? add to cart bar-->
+        <!-- <div class="products-cart">
+            .cart-box-p            
+        </div> -->
+    </div>
+
+    <!-- ? hero section -->
+    <section class="hero-area">
+        <img class="greenbox" src="./src/assets/img/greenbox.png" alt="">
+        <div class="man_vactor">
+            <img class="vct-img" src="./src/assets/img/vct.png" alt="">
+        </div>
+        <div class="content-box">
+            <div class="container head-row">
+                <div class="set-box">
+                    <div class="side-info">
+                        <h1 class="text-title">
+                            Farm Fresh Delights: Embrace the Organic Goodness!
+                        </h1>
+                        <p class="text-subtitle">Organic food is believed to offer numerous health benefits.
+                            Since organic farming avoids synthetic pesticides and fertilizers.</p>
+                        <button class="shop-btn">Shop Now <img src="./src/assets/icon/Vector (1).png" alt=""></button>
+
+                        <img class="l-vector-bg"
+                            src="./src/assets/img/kisspng-kiwifruit-water-kiwi-5a74c50a9cb7d0 1.png" alt="">
+
+                        <img class="r-vector-bg" src="./src/assets/img/line.png" alt="">
+                    </div>
+                </div>
+                <div class=""></div>
+            </div>
+        </div>
+        <div class="content-footer ">
+            <div class="container row-2 ">
+                <div class="col-box">
+                    <div class="box-1 cart-box">
+                        <div class="hero-cart">
+                            <div class="hero-cart-header">
+                                <img class="hero-vct" src="./src/assets/icon/005-organic-1.png" alt="">
+                                <h3 class="hero-cart-title">Certified Organic Product</h3>
+                            </div>
+                            <p class="hero-cart-subtitle">
+                                Organic food is believed to offer numerous health benefits.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box-1 cart-box">
+                        <div class="hero-cart">
+                            <div class="hero-cart-header">
+                                <img class="hero-vct" src="./src/assets/icon/003-home-delivery-1.png" alt="">
+                                <h3 class="hero-cart-title">Door step <br>
+                                    Delivery</h3>
+                            </div>
+                            <p class="hero-cart-subtitle">
+                                Organic food is believed to offer numerous health benefits.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- ? category section -->
+    <section class="category-section">
+        <div class="container">
+            <div data-aos="fade-up" class="all-center">
+                <img src="./src/assets/icon/Group.png" alt="" class="title-img">
+            </div>
+            <h1 data-aos="fade-up" class="main-title primary-text-color">Choose your Category</h1>
+            <p data-aos="fade-up" class="main-subtitle secondary-font">Organic food is believed to offer numerous <br>
+                health benefits without pesticides and fertilizers.</p>
+
+            <div class="category-grid">
+                <!-- ? cart 1 -->
+                <div data-aos="fade-right" class="category-cart">
+                    <div class="category-cart-header">
+                        <img src="./src/assets/img/products/04 1.png" class="img category-img" />
+                    </div>
+                    <h4 class="category-name">Fresh Vegetable</h4>
+                    <p class="category-count">(38 Items)</p>
+                </div>
+                <!-- ? cart 2 -->
+                <div class="category-cart">
+                    <div class="category-cart-header">
+                        <img src="./src/assets/img/products/05 1 (1).png" class="img category-img" />
+                    </div>
+                    <h4 class="category-name">Breads & Cookies </h4>
+                    <p class="category-count">(23 Items)</p>
+                </div>
+                <!-- ? cart 3 -->
+                <div class="category-cart">
+                    <div class="category-cart-header">
+                        <img src="./src/assets/img/products/03 1 (1).png" class="img category-img" />
+                    </div>
+                    <h4 class="category-name">Fresh Fruits</h4>
+                    <p class="category-count">(17 Items)</p>
+                </div>
+                <!-- ? cart 4 -->
+                <div data-aos="fade-left" class="category-cart">
+                    <div class="category-cart-header">
+                        <img src="./src/assets/img/products/01 1 (1).png" class="img category-img" />
+                    </div>
+                    <h4 class="category-name">Seeds & Nuts</h4>
+                    <p class="category-count">(14 Items)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? experience section -->
+    <section>
+        <div class="exp">
+            <div class="container exp-row">
+                <div class="exp-col-1">
+                    <img src="./src/assets/img/sideVct.png" alt="" class="exp-img">
+                </div>
+                <div class="exp-info">
+                    <h4 class="main-title primary-text-color text-start">Fresh & Healthy food
+                        from farm to your door</h4>
+                    <p class="main-subtitle text-start secondary-font">Organic farmers prioritize the use of compost,
+                        cover
+                        crops,
+                        and crop rotation to enrich the soil with nutrients and maintain</p>
+                    <br>
+                    <div class="exp-flex">
+                        <div class="items-center gap-between">
+                            <div class="circle-sm"><img class="exp-check" src="./src/assets/icon/path4143.png" alt="">
+                            </div>
+                            Natural Products
+                        </div>
+
+                        <div class="items-center gap-between">
+                            <div class="circle-sm"><img class="exp-check" src="./src/assets/icon/path4143.png" alt="">
+                            </div>
+                            Organic fresh Food
+                        </div>
+                    </div>
+                    <br>
+                    <p class="main-subtitle md-hide text-start secondary-font">
+                        Organic farmers prioritize the use of compost, cover crops,
+                        and crop rotation to enrich the soil with nutrients and maintain
+                        its fertility. By doing so, they promote the growth of healthy
+                    </p>
+
+                    <div class="flex-title">
+                        <img src="./src/assets/icon/1icn.png" class="flex-title-img" alt="">
+                        <h5 class="font-24 primary-text-color flex-exp-title">Every day fresh and quality product
+                            delivery to your doorstep</h5>
+                    </div>
+
+                    <button data-aos="fade-up" class="shop-btn">Learn more <img src="./src/assets/icon/Vector (1).png"
+                            alt=""></button>
+                </div>
+
+                <img class="right-vct" src="./src/assets/img/elements.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ? regular products -->
+    <section class="regular-product-section ">
+        <div class="container">
+            <h5 data-aos="fade-up" class="main-title primary-text-color">
+                Regular Products
+            </h5>
+            <p data-aos="fade-up" class="main-subtitle secondary-font">
+                Organic farmers prioritize the use of compost, cover crops, <br>
+                and crop rotation to enrich the soil with nutrients and maintain
+            </p>
+            <div id="regulartProduct" class="product-grid">
+                <div class="product-cart">
+                    <div class="product-header">
+                        <img src="./src/assets/img/products/kisspng-waxy-corn-corn-on-the-cob-flint-corn-corn-flakes-s-corn-5a9a626632e9b4 2.png"
+                            alt="" class="product-img">
+                    </div>
+                    <h5 class="product-name font-24">Product andsa</h5>
+                    <h5 class="product-title font-16 secondary-font">$12/kg</h5>
+                    <br>
+                    <div class="justify-center">
+                        <button  onclick="addToCart(this)"  class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-cart">
+                    <div class="product-header">
+                        <img src="./src/assets/img/products/26.png" alt="" class="product-img">
+                    </div>
+                    <h5 class="product-name font-24">Red Cabbage</h5>
+                    <h5 class="product-title font-16 secondary-font">$05/kg</h5>
+                    <br>
+                    <div class="justify-center">
+                        <button  onclick="addToCart(this)"  class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-cart">
+                    <div class="product-header">
+                        <img src="./src/assets/img/products/29 1.png" alt="" class="product-img">
+                    </div>
+                    <h5 class="product-name font-24">Organic Tomato</h5>
+                    <h5 class="product-title font-16 secondary-font">$12/kg</h5>
+                    <br>
+                    <div class="justify-center">
+                        <button  onclick="addToCart(this)"  class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-cart">
+                    <div class="product-header">
+                        <img src="./src/assets/img/products/08 1.png" alt="" class="product-img">
+                    </div>
+                    <h5 class="product-name font-24">Fresh Broccoli</h5>
+                    <h5 class="product-title font-16 secondary-font">$03/kg</h5>
+                    <br>
+                    <div class="justify-center">
+                        <button  onclick="addToCart(this)"  class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png" alt=""></button>
+                    </div>
+                </div>
+
+                <div class="product-cart">
+                    <div class="product-header">
+                        <img src="./src/assets/img/products/23 1.png" alt="" class="product-img">
+                    </div>
+                    <h5 class="product-name font-24">Natural Peas</h5>
+                    <h5 class="product-title font-16 secondary-font">$2/500gm</h5>
+                    <br>
+                    <div class="justify-center">
+                        <button  onclick="addToCart(this)"  class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png" alt=""></button>
+                    </div>
+                </div>
+
+                <div class="product-cart">
+                    <div class="product-header">
+                        <img src="./src/assets/img/products/5a34ad3046d855 1.png" alt="" class="product-img">
+                    </div>
+                    <h5 class="product-name font-24">Fresh Strawberry</h5>
+                    <h5 class="product-title font-16 secondary-font">$12/kg</h5>
+                    <br>
+                    <div class="justify-center">
+                        <button  onclick="addToCart(this)"  class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png" alt=""></button>
+                    </div>
+                </div>
+
+                <div class="product-cart">
+                    <div class="product-header">
+                        <img src="./src/assets/img/products/54 1.png" alt="" class="product-img">
+                    </div>
+                    <h5 class="product-name font-24">Ripe Papaya</h5>
+                    <h5 class="product-title font-16 secondary-font">$08/500gm</h5>
+                    <br>
+                    <div class="justify-center">
+                        <button  onclick="addToCart(this)"  class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="product-cart">
+                    <div class="product-header">
+                        <img src="./src/assets/img/products/31 1.png" alt="" class="product-img">
+                    </div>
+                    <h5 class="product-name font-24">r</h5>
+                    <h5 class="product-title font-16 secondary-font">$03/kg</h5>
+                    <br>
+                    <div class="justify-center">
+                        <button  onclick="addToCart(this)"  class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png" alt=""></button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div data-aos="fade-up" class="justify-center">
+                <button class="shop-btn">Find more <img src="./src/assets/icon/Vector (1).png" alt=""></button>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ? special products -->
+
+    <section class="special-box">
+        <div class="container s-grid">
+            <div data-aos="zoom-in" class="s-col-1 hover-box s-col">
+                <h5 class="vct-s-title secondary-font ">Test the colour</h5>
+                <h5 class="vct-lg-title  ">Fresh Red Guava</h5>
+                <div class="all-center">
+                    <button class="s-shop-now">
+                        Shop now <img class="black-l" src="https://cdn-icons-png.flaticon.com/512/109/109617.png"
+                            alt="">
+                    </button>
+                </div>
+                <br>
+                <div class="rounded all-center">
+                    <img class="vct-f" src="./src/assets/img/products/banner 1 (1).png" alt="">
+                </div>
+            </div>
+            <div class="s-col-2 s-col">
+                <div data-aos="zoom-in" class="cart-1 ">
+                    <img class="vct-img-2" src="./src/assets/img/products/Group 75 (1).png" alt="">
+                    <div class="info-2">
+                        <h5 class="vct-s-title-2 secondary-font ">Organic</h5>
+                        <h5 class="vct-lg-title-2  ">Banana</h5>
+                        <div class="justify-end">
+                            <button class="s-shop-now">
+                                Shop now <img class="black-l"
+                                    src="https://cdn-icons-png.flaticon.com/512/109/109617.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="cart-2">
+                    <div class="info-3">
+                        <h5 class="vct-s-title-3 secondary-font ">Healthy</h5>
+                        <h5 class="vct-lg-title-3  ">Organic Egg</h5>
+                        <button class=" btn-start">
+                            Shop now <img class="black-l" src="https://cdn-icons-png.flaticon.com/512/109/109617.png"
+                                alt="">
+                        </button>
+                    </div>
+                    <img class="vct-3" src="./src/assets/img/products/Group 76 (1).png" alt="">
+
+                </div>
+            </div>
+            <div data-aos="zoom-in" class="s-col-3 s-col " data-aos="fade-right">
+                <div class="text-center info-box">
+                    <p class="col-3-s-title secondary-font">Organic & Natural</p>
+                    <p class="col-3-l-title">Organic & Natural</p>
+                    <div class="all-center">
+                        <button class="s-shop-now">
+                            Shop now <img class="black-l" src="https://cdn-icons-png.flaticon.com/512/109/109617.png"
+                                alt="">
+                        </button>
+                    </div>
+                </div>
+                <img class="c-img" src="./src/assets/img/products/image.png" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ? Best Deals -->
+    <section class="relative">
+        <div class="container relative">
+            <img src="./src/assets/img/img.png" alt="" class="abs-img-2">
+        </div>
+        <div class="vw">
+            <img src="./src/assets/img/3355422_1 1.png" alt="" class="abs-img">
+        </div>
+        <div class="best-deals relative">
+            <div class="container ">
+                <div class="bg-abs "></div>
+                <div class="content-box-2 container">
+                    <div class="b-row">
+                        <div class="b-col-1 ">
+
+                            <p class="b-subtitle secondary-font">Weekly Offer</p>
+                            <p class="b-title primary-text-color relative b-col ">Best Deals <img
+                                    src="./src/assets/img/ct.png" alt="" class="l-vect"></p>
+
+                            <br>
+                            <p class="b-subtitle-md secondary-font font-24">Exciting offer for next 7 days</p>
+                            <p class="b-subtitle-sm secondary-font">Get your offer as early as possible</p>
+
+                            <div class="slide-sm"><br>
+                                <div class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+  
+        <div class="swiper-slide p-y-8">
+        <div class="slider-s-cart">
+                <div class="slider-s-cart-header">
+                    <img src="./src/assets/img/products/GUEST_ab334da0-aaeb-4dc3-9127-49aac9acea68.jpg" alt="" class="s-img">
+                </div>
+                <div class="slider-s-cart-body">
+                    <h4 class="p-s-name font-24">Organic Zucchini</h4>
+                    <p class="p-s-title secondary-font">$02 - <del class="old-price">$06</del>/price</p>
+                    <div class="p-s-rate">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                    </div>
+
+                    <div class="items-center  items-group">
+                        <p class="secondary-font">Available: 20</p>
+                        <button onclick="addToCart(this)" class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png"
+                                                class="cart-sm"></button>
+                    </div>
+                </div>
+        </div>
+      </div>
+     
+      <div class="swiper-slide p-y-8">
+        <div class="slider-s-cart">
+                <div class="slider-s-cart-header">
+                    <img src="./src/assets/img/products/pd.webp" alt="" class="s-img">
+                </div>
+                <div class="slider-s-cart-body">
+                    <h4 class="p-s-name font-24">Red Snapper</h4>
+                    <p class="p-s-title secondary-font">$02 - <del class="old-price">$06</del>/price</p>
+                    <div class="p-s-rate">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                    </div>
+
+                    <div class="items-center  items-group">
+                        <p class="secondary-font">Available: 20</p>
+                        <button  onclick="addToCart(this)" class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png"
+                                                class="cart-sm"></button>
+                    </div>
+                </div>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide p-y-8">
+        <div class="slider-s-cart">
+                <div class="slider-s-cart-header">
+                    <img src="./src/assets/img/products/GUEST_ab334da0-aaeb-4dc3-9127-49aac9acea68.jpg" alt="" class="s-img">
+                </div>
+                <div class="slider-s-cart-body">
+                    <h4 class="p-s-name font-24">Organic Zucchini</h4>
+                    <p class="p-s-title secondary-font">$02 - <del class="old-price">$06</del>/price</p>
+                    <div class="p-s-rate">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                        <img class="star" src="./src/assets/icon/001-star.png" alt="">
+                    </div>
+
+                    <div class="items-center  items-group">
+                        <p class="secondary-font">Available: 20</p>
+                        <button  onclick="addToCart(this)" class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png"
+                                                class="cart-sm"></button>
+                    </div>
+                </div>
+        </div>
+      </div>
+    
+       
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+                            </div>
+                            <div class="b-col-2 b-col">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!-- ? trending products -->
+    <br>
+    <div class="grid-3 container">
+        <div class="t-col-1 t-col">
+            <h1 class="trending_products-title ">Trending Products</h1>
+            <div data-aos="zoom-in" class=" cart-body hover-box items-center">
+                <div class="cart-body-img">
+                    <img class="hover-target" src="./src//assets/img/products/07 1.png" alt="">
+                </div>
+                <div class="cart-body-details hover-box text-black">
+                    <h3 class="cart-body-title">Bitter Gourd</h3>
+                    <div class="cart-body-details-div">
+                        <div class="items-center secondary-font">
+                            <p class="cart-body-ptag">$03/kg</p>
+                            <p class="cart-body-ptagsecond">$07/kg</p>
+                        </div>
+                    </div>
+                    <button  onclick="addToCart(this)" class="between add-toCar-div secondary-font">
+                        <h4 class="cart-body-divh4">Add to Cart</h4>
+                        <img src="./src/assets/icon/cart.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" class=" cart-body hover-box items-center">
+                <div class="cart-body-img">
+                    <img class="hover-target" src="./src//assets/img/products/18 1.png" alt="">
+                </div>
+                <div class="cart-body-details ">
+                    <h3 class="cart-body-title text-black">Organic Corn</h3>
+                    <div class="cart-body-details-div">
+                        <div class="items-center secondary-font">
+                            <p class="cart-body-ptag">$03/kg</p>
+                            <p class="cart-body-ptagsecond">$07/kg</p>
+                        </div>
+                    </div>
+                    <button  onclick="addToCart(this)" class="between add-toCar-div secondary-font">
+                        <h4 class="cart-body-divh4">Add to Cart</h4>
+                        <img src="./src/assets/icon/cart.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" class=" cart-body hover-box  items-center">
+                <div class="cart-body-img">
+                    <img class="hover-target" src="./src//assets/img/products/25 2.png" alt="">
+                </div>
+                <div class="cart-body-details ">
+                    <h3 class="cart-body-title text-black">Green Pumpkin</h3>
+                    <div class="cart-body-details-div">
+                        <div class="items-center secondary-font">
+                            <p class="cart-body-ptag">$03/kg</p>
+                            <p class="cart-body-ptagsecond">$07/kg</p>
+                        </div>
+                    </div>
+                    <button class="between add-toCar-div secondary-font">
+                        <h4  onclick="addToCart(this)" class="cart-body-divh4">Add to Cart</h4>
+                        <img src="./src/assets/icon/cart.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="t-col-2 t-col">
+            <h1 class="trending_products-title transparent">Trending Products</h1>
+            <div data-aos="zoom-in" class="trending_products-second-div1 hover-box relative ">
+                <div class="r-absolute">
+                    <p>Organic & Natural</p>
+                    <h3 class="text-black">Fresh Fruits & Juice</h3>
+                    <div class="between items-center">
+                        <button  onclick="addToCart(this)">Shop now <img class="w-sm" src="./src//assets//icon/Arrow 1.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="justify-end image-div ">
+                    <img class="t2-img" class="hover-target" src="/src//assets/img/products/63 1.png" alt="">
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" class="trending_products-second-div2">
+                <div class="trending_products-second-divs">
+                    <div>
+                        <p class="trending_products-second-div2-pTag">Organic & Natural</p>
+                        <h3 class="trending_products-second-div2-h3Tag text-black">Fresh Fruits & Juice</h3>
+                        <div class="between items-center ">
+                            <div class="trending_products-button-div">
+                                <button  onclick="addToCart(this)" class="trending_products-second-div-Button">Shop now <img
+                                        src="./src//assets/icon/Arrow 1.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="justify-end image-div   ">
+                        <img class="c3-img"
+                            src="/src//assets/img/products/kisspng-vegetable-fruit-basket-century-farms-international-fruits-and-vegetables-5abfb9c60122f5 1.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="t-col-3 t-col">
+            <h1 class="trending_products-title ">Best Seller</h1>
+            <div data-aos="zoom-in" class=" cart-body hover-box items-center">
+                <div class="cart-body-img">
+                    <img class="hover-target" src="./src//assets/img/products/28 1.png" alt="">
+                </div>
+                <div class="cart-body-details ">
+                    <h3 class="cart-body-title text-black">Green Pumpkin</h3>
+                    <div class="cart-body-details-div">
+                        <div class="items-center secondary-font">
+                            <p class="cart-body-ptag">$03/kg</p>
+                            <p class="cart-body-ptagsecond">$07/kg</p>
+                        </div>
+                    </div>
+                    <button class="between add-toCar-div secondary-font">
+                        <h4  onclick="addToCart(this)" class="cart-body-divh4">Add to Cart</h4>
+                        <img src="./src/assets/icon/cart.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <!-- ? cart-2 -->
+            <div data-aos="zoom-in" class=" cart-body hover-box  items-center">
+                <div class="cart-body-img">
+                    <img class="hover-target"
+                        src="./src//assets/img/products/WhatsApp Image 2023-11-13 at 11.10.41_0b971824.jpg" alt="">
+                </div>
+                <div class="cart-body-details ">
+                    <h3 class="cart-body-title text-black">Fresh Asparagus</h3>
+                    <div class="cart-body-details-div">
+                        <div class="items-center secondary-font">
+                            <p class="cart-body-ptag">$03/kg</p>
+                            <p class="cart-body-ptagsecond">$07/kg</p>
+                        </div>
+                    </div>
+                    <button class="between add-toCar-div secondary-font">
+                        <h4  onclick="addToCart(this)" class="cart-body-divh4">Add to Cart</h4>
+                        <img src="./src/assets/icon/cart.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <!-- ? cart-3 -->
+            <div data-aos="zoom-in" class=" cart-body hover-box  items-center">
+                <div class="cart-body-img">
+                    <img class="hover-target" src="./src/assets/img/products/37 63080.png" alt="">
+                </div>
+                <div class="cart-body-details ">
+                    <h3 class="cart-body-title text-black">Organic Guava</h3>
+                    <div class="cart-body-details-div">
+                        <div class="items-center secondary-font">
+                            <p class="cart-body-ptag">$03/kg</p>
+                            <p class="cart-body-ptagsecond">$07/kg</p>
+                        </div>
+                    </div>
+                    <button class="between add-toCar-div secondary-font">
+                        <h4  onclick="addToCart(this)" class="cart-body-divh4">Add to Cart</h4>
+                        <img src="./src/assets/icon/cart.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- ? Most view Products -->
+    <section class="best-deatl">
+        <div class="container">
+            < <h5 data-aos="fade-up" class="main-title primary-text-color">
+                Most view Products
+                </h5>
+                <p data-aos="fade-up" class="main-subtitle secondary-font">
+                    Organic farmers prioritize the use of compost, cover crops, <br>
+                    and crop rotation to enrich the soil with nutrients and maintain
+                </p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p-y-6">
+                            <div class="product-cart-s">
+                                <div class="product-header pr-box">
+                                    <img src="./src/assets/img/products/kisspng-waxy-corn-corn-on-the-cob-flint-corn-corn-flakes-s-corn-5a9a626632e9b4 2.png"
+                                        alt="" class="product-img">
+                                </div>
+                                <div class="cart-2-body">
+                                    <h2 class="product-name font-24">Organic Corn</h2>
+                                    <p class="product-title font-16 secondary-font">12/Kg</p>
+                                    <br>
+                                    <div class="justify-center">
+                                        <button  onclick="addToCart(this)" class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png"
+                                                class="cart-sm"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ? slid 2 -->
+                        <div class="swiper-slide p-y-6">
+                            <div class="product-cart-s">
+                                <div class="product-header pr-box">
+                                    <img src="./src/assets/img/products/08 1.png" alt="" class="product-img">
+                                </div>
+                                <div class="cart-2-body">
+                                    <h2 class="product-name font-24">Red Cabbage</h2>
+                                    <p class="product-title font-16 secondary-font">12/Kg</p>
+                                    <br>
+                                    <div class="justify-center">
+                                        <button  onclick="addToCart(this)" class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png"
+                                                class="cart-sm"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ? slid 3 -->
+                        <div class="swiper-slide p-y-6">
+                            <div class="product-cart-s">
+                                <div class="product-header pr-box">
+                                    <img src="./src/assets/img/products/07 1.png" alt="" class="product-img">
+                                </div>
+                                <div class="cart-2-body">
+                                    <h2 class="product-name font-24">Fresh Broccoli</h2>
+                                    <p class="product-title font-16 secondary-font">12/Kg</p>
+                                    <br>
+                                    <div class="justify-center">
+                                        <button  onclick="addToCart(this)" class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png"
+                                                class="cart-sm"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-y-6">
+                            <div class="product-cart-s">
+                                <div class="product-header pr-box">
+                                    <img src="./src/assets/img/products/07 1.png" alt="" class="product-img">
+                                </div>
+                                <div class="cart-2-body">
+                                    <h2 class="product-name font-24">Fresh Broccoli</h2>
+                                    <p class="product-title font-16 secondary-font">12/Kg</p>
+                                    <br>
+                                    <div class="justify-center">
+                                        <button class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png"
+                                                class="cart-sm"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ? slid 4 -->
+                        <div class="swiper-slide p-y-6">
+                            <div class="product-cart-s">
+                                <div class="product-header pr-box">
+                                    <img src="./src/assets/img/products/29 1.png" alt="" class="product-img">
+                                </div>
+                                <div class="cart-2-body">
+                                    <h2 class="product-name font-24">Organic Tomato</h2>
+                                    <p class="product-title font-16 secondary-font">12/Kg</p>
+                                    <br>
+                                    <div class="justify-center">
+                                        <button  onclick="addToCart(this)" class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png"
+                                                class="cart-sm"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-y-6">
+                            <div class="product-cart-s">
+                                <div class="product-header pr-box">
+                                    <img src="./src/assets/img/products/kisspng-waxy-corn-corn-on-the-cob-flint-corn-corn-flakes-s-corn-5a9a626632e9b4 2.png"
+                                        alt="" class="product-img">
+                                </div>
+                                <div class="cart-2-body">
+                                    <h2 class="product-name font-24">Organic Corn</h2>
+                                    <p class="product-title font-16 secondary-font">12/Kg</p>
+                                    <br>
+                                    <div class="justify-center">
+                                        <button  onclick="addToCart(this)" class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png"
+                                                class="cart-sm"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-y-6">
+                            <div class="product-cart-s">
+                                <div class="product-header pr-box">
+                                    <img src="./src/assets/img/products/kisspng-waxy-corn-corn-on-the-cob-flint-corn-corn-flakes-s-corn-5a9a626632e9b4 2.png"
+                                        alt="" class="product-img">
+                                </div>
+                                <div class="cart-2-body">
+                                    <h2 class="product-name font-24">Organic Corn</h2>
+                                    <p class="product-title font-16 secondary-font">12/Kg</p>
+                                    <br>
+                                    <div class="justify-center">
+                                        <button  onclick="addToCart(this)" class="add-p-cart">Add to cart <img src="./src/assets/icon/cart.png"
+                                                class="cart-sm"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+        </div>
+    </section>
+
+   <!-- ? banner -->
+    <section class="mt-50">
+        <main class=" main-Organic-section container relative ">
+            <div class="quality-div">
+                <div class="quality-image1">
+                    <img src="./src//assets/img/products/5903157 2.png" alt="">
+                </div>
+                <div class="quality-details">
+                    <p class="quality-details-p">Organic & Garden Fresh</p>
+                    <h1 class="quality-details-h">Need Organic & quality
+                        product everyday?</h1>
+                    <div class="all-center rd-box">
+                          <button data-aos="fade-up" class="shop-btn aos-init aos-animate">Learn more <img src="./src/assets/icon/Vector (1).png" alt=""></button>
+                    </div>
+                </div>
+                <div class="quality-image2">
+                    <img class="quality-image2-img" src="./src//assets/img/products/66 1.png" alt="">
+                </div>
+            </div>
+        </main>
+   </section>
+
+   <!-- ? bottom carts -->
+   <section class="mt-50">
+        <div class="product-delivery-div container ">
+            <div class="items-centers">
+                <img class="product-delivery-img" src="./src/assets/icon/006-package.png" alt="">
+                <div class="product-delivery-title-section">
+                    <h1 class="product-delivery-title">Free Delivery</h1>
+                    <p class="product-delivery-description">Get free delivery for order
+                        spent $100 or over.</p>
+                </div>
+            </div>
+            <div class="items-centers">
+                <img class="product-delivery-img" src="./src/assets/icon/003-credit-card.png" alt="">
+                <div class="product-delivery-title-section">
+                    <h1 class="product-delivery-title">Safe Payment</h1>
+                    <p class="product-delivery-description">Payment system is very
+                        much sage and secure.</p>
+                </div>
+            </div>
+            <div class="items-centers">
+                <img class="product-delivery-img" src="./src/assets/icon/002-money.png" alt="">
+                <div class="">
+                    <h1 class="product-delivery-title">Money Back</h1>
+                    <p class="product-delivery-description">Very easy to make your
+                        money back option.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ? footer -->
+    <footer class="mt-50">
+        <div class=" container">
+            <div class="footer-section">
+                <div class="relative ft-col-1">
+                    <img class="footer-logo" src="./src//assets//img/logo (1).png" alt="">
+                    <br> <br> <br>
+                    <h5 class="f-col-title">Contact</h5>
+                    <p class="f-col-subtitle secondary-font">hellopurely@example.com</p>
+                    <p class="col-link mt-3 secondary-font">245, Central Streel, Havel Tower
+                        South City, New York, USA</p> <br>
+                    <span><a class="f-bottom-link items-center" href="#">More webflow Template <img class="col-l-icon"
+                                src="./src/assets/icon/color-l.png" alt="">
+                        </a></span>
+                </div>
+                <div class="ft-col-2">
+                    <h5 class="f-col-title">Categories</h5> <br>
+                    <li class="col-item"><a class="col-link" href="#">Fresh Vegetable</a></li>
+                    <li class="col-item"><a class="col-link" href="#">Bread & Cookies</a></li>
+                    <li class="col-item"><a class="col-link" href="#">Fresh Fruits</a></li>
+                    <li class="col-item"><a class="col-link" href="#">Seeds & Nuts</a></li>
+                    <li class="col-item"><a class="col-link" href="#">Regular Products</a></li>
+                </div>
+                <div class="ft-col-3">
+                    <h5 class="f-col-title">Useful Links</h5> <br>
+                    <li class="col-item"><a class="col-link" href="#">My Account</a></li>
+                    <li class="col-item"><a class="col-link" href="#">Return Policy</a></li>
+                    <li class="col-item"><a class="col-link" href="#">Terms of Service</a></li>
+                    <li class="col-item"><a class="col-link" href="#">Payment & Tax</a></li>
+                    <li class="col-item"><a class="col-link" href="#">FAQ</a></li>
+                </div>
+                <div>
+                    <h5 class="f-col-title ">Stay up to date</h5>
+                    <p class="f-col-3-subtitle font-18 secondary-font">Subscribe our newsletter and <br>
+                        get all the latest information
+                    </p>
+                    <div class="footer-input">
+                        <input class="footer-inp" type="email" name="email" id="" placeholder="Your email address">
+                        <button class="footer-search">
+                            <img class="arrow-icon-f" src="./src//assets//icon/Arrow 1.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="footer-bottom secondary-font">
+        <div class="container f-between">
+            <p class="b-footer-title">Copyright Purely | Designed by <b>Brandbase</b> - Powred by <b>Webflow</b></p>
+            <ul class="icon-flex">
+                <li>
+                    <img src="./src/assets/icon/Frame (1).png" alt="" class="">
+                </li>
+                <li>
+                    <img src="./src/assets/icon/Frame (2).png" alt="" class="">
+                </li>
+                <li>
+                    <img src="./src/assets/icon/Frame (3).png" alt="" class="">
+                </li>
+                <li>
+                    <img src="./src/assets/icon/Frame (4).png" alt="" class="">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- !slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- ! animation   -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
