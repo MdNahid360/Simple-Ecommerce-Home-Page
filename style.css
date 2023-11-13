@@ -27,7 +27,7 @@ html {
 body {
     font-family: var(--primary-font);
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* ! slider */
@@ -1591,4 +1591,8 @@ letter-spacing: -0.18px;
     font-style: normal;
     font-weight:400;
     margin-top: 12px;
+}
+
+.overflow-hidden{
+    overflow: hidden!important;
 }

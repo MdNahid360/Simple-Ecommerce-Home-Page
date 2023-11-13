@@ -19,6 +19,7 @@ window.addEventListener("scroll", () => {
 
   if (scrollNum > 100) {
     topNav.style.height = "0px";
+    topNav.style.width = "100%";
     topNav.style.overflow = "hidden";
     topNav.style.transition = "all 0.3s ease";
 
@@ -29,9 +30,11 @@ window.addEventListener("scroll", () => {
      topNav.style.transition = "all 0.3s ease";
      
     topNav.style.overflow = "visible";
+    topNav.style.width = "100%";
     nav.style.transition = "all 0.3s ease";
     nav.style.background = "white";
     nav.style.position = "relative";
+    nav.style.width = "100%";
    }
 });
 
